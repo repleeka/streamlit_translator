@@ -25,16 +25,10 @@ text_value = st.text_area(
     max_chars=100,
     help=":{}[Enter only selected language sentences or words]".format(text_color),
 )
-dest_option = st.selectbox("Output language", [(v.capitalize()) for k,v in langs.items()])
-        
 
+dest_option = st.selectbox("Output language", [(v.capitalize()) for k,v in langs.items()])
 if st.button("Translate"):
-    if not text_value:
-        # st.text_area(
-        #     label=":{}[{} Language]".format(text_color, src_option),
-        #     placeholder="Translated texts will appear here.",
-        #     disabled=True,
-        #     )
+    if not text_value:  
         st.warning("Enter Text")
     else:
         translated_text = translator.translate(text=text_value, src=src_option, dest=dest_option)
