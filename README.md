@@ -36,4 +36,4 @@ To run this app locally, follow these steps:
 
 
 ## Support
- - For any inquiries or support, please open an issue or contact [Email](tungondugi@gmail.com)
+ - For any inquiries or support, please open an issue or contact [tungondugi@gmail.com](gmail.com)
