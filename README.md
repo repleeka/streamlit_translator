@@ -23,7 +23,7 @@ To run this app locally, follow these steps:
    cd streamlit_translator
    ```
 
-2. pip install -r requirements.txt
+2. `pip install -r requirements.txt`
 
  ## Usage
  1. Run the app:
@@ -36,4 +36,4 @@ To run this app locally, follow these steps:
 
 
 ## Support
- - For any inquiries or support, please open an issue or contact [Email](tungondugi@gmail.com)
+ - For any inquiries or support, please open an issue or contact [tungondugi@gmail.com](gmail.com)
