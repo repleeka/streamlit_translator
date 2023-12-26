@@ -1,18 +1,18 @@
 # Language Translator App
 
-This Streamlit web app translates text from one language to another using the Google Translate API.
+This Streamlit web app translates text from *English* language to *German* language using the *Pre-trained OpenNMT-py models*.
 
-## Overview
+#### Overview
 
-The Language Translator App is a simple tool built using Streamlit and the Google Translate API. It allows users to input text or sentences in a selected language and translates them into another language of their choice.
+The Language Translator App is a simple tool built using *Streamlit* and the *Pre-trained OpenNMT-py models*. It allows users to input word or sentences in a English language and translates them into German language.
 
-## Features
+#### Features
 
-- Translate text or sentences from one language to another.
-- Supports a variety of languages available in Google Translate.
-- Displays translated text and pronunciation (if available).
+- Translate text or sentences from English language to German language.
+- Uses OpenNMT-py pretrained model with ctranslate2.
+- Displays translated text(s).
 
-## Installation
+#### Installation
 
 To run this app locally, follow these steps:
 
@@ -25,15 +25,29 @@ To run this app locally, follow these steps:
 
 2. `pip install -r requirements.txt`
 
- ## Usage
+#### Usage
  1. Run the app:
     ```bash
-    streamlit run translator.py
+    streamlit run translator_nmt.py
     ```
-2. Select the input language and output language from the dropdown menus.
-3. Enter the text or sentences you want to translate.
-4. Click on the "Translate" button to get the translated text.
+2. Enter the word or sentences you want to translate.
+3. Click on the "Translate" button to get the translated text.
 
 
-## Support
+#### Downloading the Pretrained Model
+
+- Download the pretrained model from the following link:
+  - [Transformer EN-DE WMT OpenONMT-py](https://s3.amazonaws.com/opennmt-models/transformer-ende-wmt-pyOnmt.tar.gz)
+ - The pretrained model directory will contain two file:
+    - `averaged-10-epoch.pt`
+    - `sentencepiece.model`
+ - For more information through the turorials provided in the reporsitory.
+
+#### Convert the Model using CTranslate2
+
+- Install CTranslate2 from the official repository available at:
+  - [CTranslate2 GitHub Repository](https://github.com/OpenNMT/CTranslate2)
+- Follow the instructions provided in the repository to install and set up CTranslate2.
+
+#### Support
  - For any inquiries or support, please open an issue or contact [tungondugi@gmail.com](gmail.com)
