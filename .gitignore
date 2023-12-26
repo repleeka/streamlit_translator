@@ -1,0 +1,4 @@
+# ignore the OpenNMT-py configuration files
+*.bin
+*.pt
+*.model
