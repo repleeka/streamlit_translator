@@ -8,11 +8,11 @@ This Streamlit web app translates text from *English* language to *German* langu
 The Language Transl  ator App is a simple tool built using *Streamlit* and the *Pre-trained OpenNMT-py models*. It allows users to input word or sentences in a English language and translates them into German language.
 #### Interface before translation
 
-![Before Translation](img/01.jpg)
+![Before Translation](/img/01.jpg)
 
 #### Interface after translation
 
-![After Translation](img/02.jpg)
+![After Translation](/img/02.jpg)
 
 #### Features
 
