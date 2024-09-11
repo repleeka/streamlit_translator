@@ -79,14 +79,15 @@ st.markdown("""
         bottom: 0;
         left: 0;
         width: 100%;
-        background-color: #f1f1f1;
+        background-color: #0000;
         text-align: center;
         padding: 10px;
-        font-size: 12px;
-        color: #555;
+        font-size: 15px;
+        color: #FFFFFF;
     }
     </style>
     <div class="footer">
-        Design with love by Tungon Dugi
+        &copy; Tungon Dugi (NIT Arunachal Pradesh) 2024
+
     </div>
 """, unsafe_allow_html=True)
