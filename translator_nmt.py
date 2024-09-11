@@ -48,18 +48,16 @@ sp_target_model = spm.SentencePieceProcessor(sp_target_model_path)
 
 
 # setting the color of the text in the page
-text_color = "black"
+# text_color = "black"
 
-st.title(":{}[:shinto_shrine: English to Tawra]".format(text_color))
-st.header(":{}[Language Translator]".format(text_color))
+st.title(":shinto_shrine: English to Tawra Language Translator")
+# st.header("Language Translator")
 
 text_value = st.text_area(
-    label=":{}[English Language]".format(text_color),
+    label="English Language",
     placeholder="Enter word or sentences to translate.",
     max_chars=100,
-    help=":{}[Enter only selected language sentences or words]".format(
-        text_color),
-)
+    help="Enter only selected language sentences or words")
 
 if st.button("Translate"):
     if not text_value:
@@ -68,8 +66,7 @@ if st.button("Translate"):
         translated_text = translate(
             text_value, translator, sp_source_model, sp_source_model)
         st.text_area(
-            label=":{}[Tawra language]".format(
-                text_color),
+            label="Tawra language",
             placeholder="Translated texts will appear here.",
             disabled=True,
             value=translated_text,
