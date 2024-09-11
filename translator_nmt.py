@@ -35,9 +35,9 @@ def translate(source, translator, sp_source_model, sp_target_model):
 
 
 # [Modify] File paths here to the CTranslate2 SentencePiece models.
-ct_model_path = "ende_ct2"
-sp_source_model_path = "models/sentencepiece.model"
-sp_target_model_path = "models/sentencepiece.model"
+ct_model_path = "eng_taw_200k"
+sp_source_model_path = "models/eng_taw_spm.model"
+sp_target_model_path = "models/eng_taw_spm.model"
 
 # Create objects of CTranslate2 Translator and SentencePieceProcessor to load the models
 translator = ctranslate2.Translator(
@@ -50,7 +50,7 @@ sp_target_model = spm.SentencePieceProcessor(sp_target_model_path)
 # setting the color of the text in the page
 text_color = "black"
 
-st.title(":{}[:shinto_shrine: English to German]".format(text_color))
+st.title(":{}[:shinto_shrine: English to Tawra]".format(text_color))
 st.header(":{}[Language Translator]".format(text_color))
 
 text_value = st.text_area(
@@ -68,7 +68,7 @@ if st.button("Translate"):
         translated_text = translate(
             text_value, translator, sp_source_model, sp_source_model)
         st.text_area(
-            label=":{}[German language]".format(
+            label=":{}[Tawra language]".format(
                 text_color),
             placeholder="Translated texts will appear here.",
             disabled=True,
