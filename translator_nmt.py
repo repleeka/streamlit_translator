@@ -71,3 +71,22 @@ if st.button("Translate"):
             disabled=True,
             value=translated_text,
         )
+# Footer
+st.markdown("""
+    <style>
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #f1f1f1;
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+        color: #555;
+    }
+    </style>
+    <div class="footer">
+        Design with love by Tungon Dugi
+    </div>
+""", unsafe_allow_html=True)
